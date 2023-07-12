@@ -1,16 +1,16 @@
 public class largest_num {
-    public static int number(int num[]){
-//        int largest= Integer.MIN_VALUE; //(  -infinity  )
-        int largest = num[0];
+    public static int largest(int []num){
+        int number =num[0];
         for(int i=1; i<num.length; i++){
-            if(largest<num[i]){
-                largest=num[i];
+            if(number<num[i]){
+                number=num[i];
             }
         }
-        return largest;
+        return number;
     }
-    public static void main(String[]args){
-        int [] num= {1,3,6,2,19,98,33};
-       System.out.println(number(num));
+    public static void main(String[] args) {
+        int [] num ={79,55,33,77,99};
+//        largest(num);
+        System.out.println(largest(num));
     }
 }
